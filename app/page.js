@@ -76,7 +76,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl font-semibold py-1 dark:text-white ">
+            <h3 className="text-teal-600 text-3xl font-semibold py-1 dark:text-white ">
               Who I am
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -92,53 +92,59 @@ export default function Home() {
               programming and teaching.
             </p>
           </div>
-          <div className="lg:flex gap-10 font-medium">
-            <div className="h-[530px] flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+          <div className="lg:flex gap-10 font-medium text-white dark:text-gray-800">
+            <div className="h-[530px] bg-gray-900 flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <BiCodeAlt fontSize={80} color="orange" />
               <h3 className="pt-8 pb-2 text-lg">The Basics</h3>
               <p className="py-2 text-center">
-                I learned how important is to learn the basics
+                I learned how important it is to learn the basics well and then
+                to improve.
               </p>
-              <h4 className="py-4 text-teal-600">Frontend Skills</h4>
-              <p className="text-gray-800 py-1">Html</p>
-              <p className="text-gray-800 py-1">Css</p>
-              <p className="text-gray-800 py-1">JavaScript</p>
+              <h4 className="py-4 text-teal-600 text-lg mt-4">
+                Frontend Skills
+              </h4>
+              <p className="py-1">Html</p>
+              <p className="py-1">Css</p>
+              <p className="py-1">JavaScript</p>
             </div>
-            <div className="h-[530px] flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="h-[530px] bg-gray-900 flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <BiLaptop fontSize={80} color="#5585b5" />
-              <h3 className="text-lg pt-8 pb-2 ">Coding</h3>
+              <h3 className="text-lg pt-8 pb-2">Coding</h3>
               <p className="py-2 text-center">
                 I'm improving with Next.js and others to become a Fullstack
               </p>
-              <h4 className="py-4 text-teal-600">My tech stack</h4>
-              <p className="text-gray-800 py-1">React.js</p>
-              <p className="text-gray-800 py-1">Tailwind Css</p>
-              <p className="text-gray-800 py-1">Next.js</p>
-              <p className="text-gray-800 py-1">TypeScript</p>
+              <h4 className="py-4 text-teal-600 text-lg mt-4">My Tech Stack</h4>
+              <p className="py-1">React.js</p>
+              <p className="py-1">Tailwind Css</p>
+              <p className="py-1">Next.js</p>
+              <p className="py-1">TypeScript</p>
             </div>
-            <div className="h-[530px] flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="h-[530px] bg-gray-800 flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <TfiThumbUp fontSize={80} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">More Skills</h3>
               <p className="py-2 text-center">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+                There are many useful tools for a Developer and I try to be
+                always updated
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600 text-lg mt-4">Tools I Use</h4>
+              <p className="py-1">Firebase</p>
+              <p className="py-1">MongoDB</p>
+              <p className="py-1">Figma</p>
+              <p className="py-1">VsCode</p>
             </div>
           </div>
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
+            <h3 className="text-teal-600 text-3xl font-semibold py-1 dark:text-white ">
+              Portofolio
+            </h3>
+            <p className="text-lg font-medium py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Here are some of my projects, with the languages and tools used.
+              <br /> List of my<span className="text-teal-500"> Skills </span>:
+              <br /> Html, Css, JavaScript, React.js, Sass, Tailwind Css, Styled
+              Component, Next.js, React Native, TypeScript, Firebase, MongoDB,{" "}
+              <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
@@ -148,53 +154,83 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-1/3 flex-1 group/{item}">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                src={githubclone}
+              />
+              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
+                Built with React.js, Sass and ReactRouterDOM
+              </h2>
+            </div>
+
+            <div className="basis-1/3 flex-1 group/{item}">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 src={portfolio}
               />
+              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
+                Built with Html and Css
+              </h2>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 group/{item}">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 src={healthyfoods}
               />
+              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
+                Built with Html, Css and JavaScript
+              </h2>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 group/{item}">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 src={udemyclone}
               />
+              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
+                Built with React.js and Tailwind Css
+              </h2>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 group/{item}">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 src={tictactoe}
               />
+              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
+                Built with Html, Css and JavaScript
+              </h2>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 group/{item}">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 src={dropdown}
               />
+              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
+                Built with React.js and Tailwind Css
+              </h2>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 group/{item}">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 src={money}
               />
+              <h2 className="invisible group-hover/{item}:visible p-2 text-teal-500 font-medium">
+                Built with Next.js and Tailwind Css
+              </h2>
             </div>
           </div>
         </section>
