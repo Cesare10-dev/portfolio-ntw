@@ -17,7 +17,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -75,21 +75,34 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
-            <h3 className="text-teal-600 text-3xl font-semibold py-1 dark:text-white ">
-              Who I am
+          <div className="space-y-6">
+            <h3 className="text-teal-600 text-3xl font-semibold dark:text-teal-400 ">
+              About Me
             </h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+            <p className="text-lg font-medium leading-8 text-gray-800 dark:text-gray-200">
+              I am a Frontend Developer, I started my path learning Html, Css
+              and JavaScript and then React.js.
+              <br />
+              To continue my growth path I chose
+              <span className="text-teal-500 dark:text-teal-400">
+                {" "}
+                Next.js{" "}
+              </span>
+              because one of my goals is to become a Fullstack Developer then
+              create and manage all the features of a complete website. <br />I
+              chose React.js also because for
+              <span className="text-teal-500 dark:text-teal-400">
+                {" "}
+                React Native
+              </span>
+              , therefore a language not much different with which to create
+              apps for Android and iOS.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            <p className="text-lg font-semibold leading-8 text-gray-800 dark:text-gray-200">
+              Now I am looking for a new challenge to continue my professional
+              and personal growth. I am looking for a company that works on a
+              big project, in the employees and always looking to improve. I
+              love working in teams, one of the best ways to grow and learn.
             </p>
           </div>
           <div className="lg:flex gap-10 font-medium text-white dark:text-gray-800">
@@ -135,102 +148,124 @@ export default function Home() {
           </div>
         </section>
         <section className="py-10">
-          <div>
-            <h3 className="text-teal-600 text-3xl font-semibold py-1 dark:text-white ">
-              Portofolio
+          <div className="space-y-6">
+            <h3 className="text-teal-600 text-3xl font-semibold dark:text-white ">
+              Portfolio
             </h3>
-            <p className="text-lg font-medium py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Here are some of my projects, with the languages and tools used.
-              <br /> List of my<span className="text-teal-500"> Skills </span>:
+            <p className="text-lg font-medium leading-8 text-gray-800 dark:text-gray-200">
+              List of my<span className="text-teal-500"> Skills </span>:
               <br /> Html, Css, JavaScript, React.js, Sass, Tailwind Css, Styled
-              Component, Next.js, React Native, TypeScript, Firebase, MongoDB,{" "}
-              <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+              Component, Next.js, React Native, TypeScript, Firebase, MongoDB...
+              <br />
+              <br />
+              Here are some of my projects, with the languages and tools used.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            <p className="text-lg font-semibold leading-8 text-gray-800 dark:text-gray-200">
+              I am currently working on new projects so I will update my
+              portfolio.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 group/{item}">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                src={githubclone}
-              />
-              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
-                Built with React.js, Sass and ReactRouterDOM
-              </h2>
+              <Link href="https://github-clone-rt.vercel.app/" target="_blank">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={githubclone}
+                />
+                <h2 className="invisible group-hover/{item}:visible p-1 text-xl text-teal-500 font-medium">
+                  Built with React.js, Sass and ReactRouterDOM
+                </h2>
+              </Link>
             </div>
 
             <div className="basis-1/3 flex-1 group/{item}">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                src={portfolio}
-              />
-              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
-                Built with Html and Css
-              </h2>
+              <Link
+                href="https://portfolio-htmlcssyt.vercel.app/"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={portfolio}
+                />
+                <h2 className="invisible group-hover/{item}:visible p-1 text-xl text-teal-500 font-medium">
+                  Built with Html and Css
+                </h2>
+              </Link>
             </div>
             <div className="basis-1/3 flex-1 group/{item}">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                src={healthyfoods}
-              />
-              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
-                Built with Html, Css and JavaScript
-              </h2>
+              <Link
+                href="https://healthyfoods-htmlcssjs.vercel.app"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={healthyfoods}
+                />
+                <h2 className="invisible group-hover/{item}:visible p-1 text-xl text-teal-500 font-medium">
+                  Built with Html, Css and JavaScript
+                </h2>
+              </Link>
             </div>
             <div className="basis-1/3 flex-1 group/{item}">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                src={udemyclone}
-              />
-              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
-                Built with React.js and Tailwind Css
-              </h2>
+              <Link href="https://udmclone-rtw.vercel.app/" target="_blank">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={udemyclone}
+                />
+                <h2 className="invisible group-hover/{item}:visible p-1 text-xl text-teal-500 font-medium">
+                  Built with React.js and Tailwind Css
+                </h2>
+              </Link>
             </div>
             <div className="basis-1/3 flex-1 group/{item}">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                src={tictactoe}
-              />
-              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
-                Built with Html, Css and JavaScript
-              </h2>
+              <Link
+                href="https://github.com/Cesare10-dev/tictactoe-react"
+                target="_blank"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={tictactoe}
+                />
+                <h2 className="invisible group-hover/{item}:visible p-1 text-xl text-teal-500 font-medium">
+                  Built with Html, Css and JavaScript
+                </h2>
+              </Link>
             </div>
             <div className="basis-1/3 flex-1 group/{item}">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                src={dropdown}
-              />
-              <h2 className="invisible group-hover/{item}:visible p-1 text-teal-500 font-medium">
-                Built with React.js and Tailwind Css
-              </h2>
+              <Link href="https://dropdown-rtw.vercel.app" target="_blank">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={dropdown}
+                />
+                <h2 className="invisible group-hover/{item}:visible p-1 text-xl text-teal-500 font-medium">
+                  Built with React.js and Tailwind Css
+                </h2>
+              </Link>
             </div>
             <div className="basis-1/3 flex-1 group/{item}">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                src={money}
-              />
-              <h2 className="invisible group-hover/{item}:visible p-2 text-teal-500 font-medium">
-                Built with Next.js and Tailwind Css
-              </h2>
+              <Link href="https://money-ochre.vercel.app" target="_blank">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={money}
+                />
+                <h2 className="invisible group-hover/{item}:visible p-2 text-teal-500 text-xl font-medium">
+                  Built with Next.js and Tailwind Css
+                </h2>
+              </Link>
             </div>
           </div>
         </section>
