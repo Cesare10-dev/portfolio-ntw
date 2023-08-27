@@ -169,6 +169,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 group/{item}">
               <Link href="https://github-clone-rt.vercel.app/" target="_blank">
                 <Image
+                  alt="project"
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
@@ -186,6 +187,7 @@ export default function Home() {
                 target="_blank"
               >
                 <Image
+                  alt="project"
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
@@ -202,6 +204,7 @@ export default function Home() {
                 target="_blank"
               >
                 <Image
+                  alt="project"
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
@@ -215,6 +218,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 group/{item}">
               <Link href="https://udmclone-rtw.vercel.app/" target="_blank">
                 <Image
+                  alt="project"
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
@@ -231,6 +235,7 @@ export default function Home() {
                 target="_blank"
               >
                 <Image
+                  alt="project"
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
@@ -244,6 +249,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 group/{item}">
               <Link href="https://dropdown-rtw.vercel.app" target="_blank">
                 <Image
+                  alt="project"
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
@@ -257,6 +263,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 group/{item}">
               <Link href="https://money-ochre.vercel.app" target="_blank">
                 <Image
+                  alt="project"
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
