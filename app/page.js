@@ -9,7 +9,7 @@ import portfolio from "@/public/img/portfolio.png";
 import healthyfoods from "@/public/img/healthyfoods.png";
 import tictactoe from "@/public/img/tictactoe.png";
 import udemyclone from "@/public/img/udemyclone.png";
-import amazonclone from "@/public/img/amazonclone.png";
+import colors from "@/public/img/colors.png";
 import dropdown from "@/public/img/dropdown.png";
 import money from "@/public/img/money.png";
 import githubclone from "@/public/img/githubclone.png";
@@ -166,7 +166,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 group/{item}">
+            <div className="basis-1/3 flex-1 group/{item} hover:opacity-80">
               <Link href="https://github-clone-rt.vercel.app/" target="_blank">
                 <Image
                   alt="project"
@@ -181,7 +181,21 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="basis-1/3 flex-1 group/{item}">
+            <div className="basis-1/3 flex-1 group/{item} hover:opacity-80">
+              <Link href="https://colors-dun.vercel.app" target="_blank">
+                <Image
+                  alt="project"
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  src={colors}
+                />
+                <h2 className="invisible group-hover/{item}:visible p-1 text-lg text-teal-500 font-medium">
+                  Built with React.js, Styled Component and ReactRouterDOM
+                </h2>
+              </Link>
+            </div>
+            <div className="basis-1/3 flex-1 group/{item} hover:opacity-80">
               <Link
                 href="https://portfolio-htmlcssyt.vercel.app/"
                 target="_blank"
@@ -198,7 +212,7 @@ export default function Home() {
                 </h2>
               </Link>
             </div>
-            <div className="basis-1/3 flex-1 group/{item}">
+            <div className="basis-1/3 flex-1 group/{item} hover:opacity-80">
               <Link
                 href="https://healthyfoods-htmlcssjs.vercel.app"
                 target="_blank"
@@ -215,7 +229,7 @@ export default function Home() {
                 </h2>
               </Link>
             </div>
-            <div className="basis-1/3 flex-1 group/{item}">
+            <div className="basis-1/3 flex-1 group/{item} hover:opacity-80">
               <Link href="https://udmclone-rtw.vercel.app/" target="_blank">
                 <Image
                   alt="project"
@@ -229,7 +243,7 @@ export default function Home() {
                 </h2>
               </Link>
             </div>
-            <div className="basis-1/3 flex-1 group/{item}">
+            <div className="basis-1/3 flex-1 group/{item} hover:opacity-80">
               <Link
                 href="https://github.com/Cesare10-dev/tictactoe-react"
                 target="_blank"
@@ -246,7 +260,7 @@ export default function Home() {
                 </h2>
               </Link>
             </div>
-            <div className="basis-1/3 flex-1 group/{item}">
+            <div className="basis-1/3 flex-1 group/{item} hover:opacity-80">
               <Link href="https://dropdown-rtw.vercel.app" target="_blank">
                 <Image
                   alt="project"
@@ -260,7 +274,7 @@ export default function Home() {
                 </h2>
               </Link>
             </div>
-            <div className="basis-1/3 flex-1 group/{item}">
+            <div className="basis-1/3 flex-1 group/{item} hover:opacity-80">
               <Link href="https://money-ochre.vercel.app" target="_blank">
                 <Image
                   alt="project"
